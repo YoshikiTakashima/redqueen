@@ -1,0 +1,21 @@
+#Dpkg
+dpkg --add-architecture i386
+
+#Apt-get
+apt-get -y update
+apt-get install -y apt-file
+apt-file -a i386 update 
+apt-get -y update
+apt-get install -y git wget sudo gcc clang g++ libc6-dev gcc-mingw-w64-x86-64  g++-mingw-w64-x86-64 module-init-tools libc6-dev-i386 python-pip libc6:i386 libc6-dev:i386 pax-utils
+
+#Main Install 
+git https://github.com/RUB-SysSec/redqueen.git
+cd redqueen
+bash install.sh
+
+#Pip 
+pip install mmh3 lz4 psutil ipdb
+
+# Manual Load fix of KVM Loading redqueen/KVM-PT/load.sh
+# Manual Compile of kafl /fuzzer/native/bitmap.c to bitmap.so
+
