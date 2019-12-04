@@ -1,3 +1,7 @@
+
+
+echo 'Installer required github signin for full install.'
+sleep 5
 #Dpkg
 dpkg --add-architecture i386
 
@@ -24,7 +28,7 @@ apt-get install -y git \
 		pax-utils
 
 #Main Install 
-git https://github.com/RUB-SysSec/redqueen.git
+git https://github.com/YoshikiTakashima/redqueen.git
 cd redqueen
 bash install.sh
 
