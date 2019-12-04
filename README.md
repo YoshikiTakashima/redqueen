@@ -1,3 +1,5 @@
+# Please run setup instead of install.sh. setup will install FULL deps AND run install.sh for you.
+
 # Red­queen: Fuz­zing with In­put-to-Sta­te Cor­re­spon­dence 
 <a href="https://www.ndss-symposium.org/ndss-paper/redqueen-fuzzing-with-input-to-state-correspondence/"> <img align="right" width="200"  src="rq_paper.png"> </a>
 
