@@ -28,8 +28,6 @@ apt-get install -y git \
 		pax-utils
 
 #Main Install 
-git https://github.com/YoshikiTakashima/redqueen.git
-cd redqueen
 bash install.sh
 
 #Pip 
