@@ -100,7 +100,7 @@ def check_vmx_pt():
         return False
     fd.close()
 
-    if ret == 0:
+    if ret != 0:
         print(FAIL + ERROR_PREFIX + "Intel PT is not supported on this CPU!" + ENDC)
         return False
 
