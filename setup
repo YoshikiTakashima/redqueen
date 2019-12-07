@@ -30,5 +30,7 @@ bash install.sh
 #Pip 
 pip install mmh3 lz4 psutil ipdb
 
+sudo echo 'kernel.yama.ptrace_scope = 0' >> /etc/sysctl.d/10-ptrace.conf
+
 # Manual Load fix of KVM Loading redqueen/KVM-PT/load.sh
 # Manual Compile of kafl /fuzzer/native/bitmap.c to bitmap.so
